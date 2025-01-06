@@ -36,6 +36,11 @@ body {
     background-color: var(--black);
 }
 
+ul {
+    list-style-position: inside;
+    font-size: 1em;
+}
+
 .header {
     background-color: rgba(0, 0, 0, 0.582);
     color: var(--white);
@@ -88,8 +93,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: var(--black)
+    /* height: 100vh; */
+    background-color: var(--black);
+    padding: 100px 0 122px 0;
 }
 
 .container {
@@ -182,8 +188,8 @@ body {
     color: var(--orange);
     padding: 30px 30px 30px 0px;
     position: sticky;
-    top: 40%;
-    font-size: 2.2em;
+    top: 50%;
+    font-size: 2em;
     width: fit-content;
 }
 
@@ -208,6 +214,7 @@ body {
 }
 
 .about__paragraph p {
+    text-align: justify;
     font-size: 1.5em;
     line-height: 2em;
 }
@@ -275,7 +282,7 @@ body {
 }
 
 .portfolio__image img {
-    border-radius: 20px;
+    border-radius: 70px;
     max-width: 100%;
     border: 1px solid rgb(227, 227, 227);
     width: -webkit-fill-available;
@@ -288,12 +295,13 @@ body {
 .portfolio__tools {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
+    gap: 10px;
+    font-size: 1em;
 }
-
 .portfolio__content {
     display: flex;
     flex-direction: column;
+    text-align: justify;
     justify-content: space-between;
     font-size: 1.2em;
     gap: 1em;
@@ -392,6 +400,10 @@ footer {
     color: var(--white);
 }
 
+.contacts__descriptions{
+    text-align: justify;
+}
+
 @media (max-width:1200px) {
     .about__number h2 {
         font-size: 4em;
@@ -430,9 +442,13 @@ footer {
     .contacts__section {
         padding: 0 0 3em 0;
     }
+    .main {
+        padding: 100px 0 3em 0;
+    }
 
     .title {
         align-self: center;
+        font-size: 1.5em;
     }
 }
 
@@ -453,6 +469,7 @@ footer {
 
 
     .about__paragraph p {
+        text-align: justify;
         font-size: 1.2em;
         line-height: 1.2em;
     }
@@ -560,6 +577,7 @@ footer {
 
 @media (max-width:425px) {
     .about__paragraph p {
+        text-align: justify;
         font-size: 1em;
     }
 
@@ -568,6 +586,7 @@ footer {
     }
 
     .portfolio__content {
+        text-align: justify;
         font-size: 1em;
     }
 
@@ -589,7 +608,7 @@ footer {
     }
 
     .title {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
 }
